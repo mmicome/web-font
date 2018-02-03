@@ -1,0 +1,23 @@
+{
+  "name": "icome",
+  "authors": [
+    "icome <mmicome@gmail.com>"
+  ],
+  "description": "a vue project with node and mongdb",
+  "main": "./app/index.htnl",
+  "license": "MIT",
+  "private": true,
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "^2.5.13",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1"
+  }
+}

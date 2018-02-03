@@ -1,0 +1,15 @@
+{
+  "name": "web-font",
+  "version": "1.0.0",
+  "description": "a vue project with node and mongdb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "icome <mmicome@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
+  }
+}
