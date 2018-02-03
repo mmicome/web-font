@@ -1,0 +1,34 @@
+{ 
+    // Details: https://github.com/victorporof/Sublime-JSHint#using-your-own-jshintrc-options
+    // Example: https://github.com/jshint/jshint/blob/master/examples/.jshintrc
+    // Documentation: http://www.jshint.com/docs/options/
+    "globalstrict": true,
+    "boss":false,
+    "sub":true, 
+    "strict": true, 
+    "undef": true, 
+    "eqeqeq": true, 
+    "eqnull": true, 
+    "laxbreak":true, 
+    "laxcomma":true, 
+    "regexp":true, 
+    "plusplus":true,
+    "asi": false, 
+    "newcap": true, 
+    "bitwise": true, 
+    "curly": false, 
+    "expr":true, 
+    "browser": true, 
+    "node": true, 
+    "latedef": false,   
+    "noarg": true,      
+    "-W032":false,
+    "esnext": true,       
+    "smarttabs": true,
+    "jasmine": true,
+    "predef": [
+        "require",
+        "define",
+        "notify"
+    ]
+}

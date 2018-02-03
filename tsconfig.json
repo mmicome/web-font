@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES5", //编译为es5的代码
+    "module": "system",//模块化方式，还有commonjs，amd等
+    "moduleResolution": "node",//使用node处理
+    "sourceMap": false,//是否生成sourcemap文件
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,//开启装饰器，好像es7才会正式提供，这里可以提前尝试，强烈建议使用
+    "removeComments": false,//编译后的代码中移除注释
+    "noImplicitAny": false
+  },
+  "exclude": [//排除有下面的目录
+    "node_modules",
+    "bower_components"
+  ]
+}

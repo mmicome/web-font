@@ -3,12 +3,42 @@
 
 ## 1. what I used
 
+##### 前端项目需要的功能：
+
+    1、图片（压缩图片支持jpg、png、gif）
+    2、样式 （支持sass 同时支持合并、压缩、重命名）
+    3、javascript （检查、合并、压缩、重命名）
+    4、html （压缩）
+    5、客户端同步刷新显示修改
+    6、构建项目前清除发布环境下的文件（保持发布环境的清洁）
+
 ---
 `view        `     ------          `vuejs, bootstrap, jquery`
 
-`包管理工具    `     ------           `bower,npm`
+`包管理工具    `     ------           `bower`,[npm](https://www.npmjs.com.cn/)
 
     - browser-sync 能够开启一个静态web服务器，供测试，当源码发生变化时，可以自动刷新页面，不用担心缓存问题
+    - 通过gulp plugins，寻找对于的gulp组件
+       - gulp-imagemin: 压缩图片
+       - gulp-ruby-sass: 支持sass
+       - gulp-minify-css: 压缩css
+       - gulp-cssnano  CSS压缩  代替minifycss
+       - gulp-jshint: 检查js
+       - gulp-uglify: 压缩js
+       - gulp-concat: 合并文件
+       - gulp-rename: 重命名文件
+       - gulp-htmlmin: 压缩html
+       - gulp-processhtml 对html中的内容进行处理
+       - gulp-clean: 清空文件夹
+       - gulp-modernizr
+       - gulp-autoprefixer
+       - gulp-copy-rex
+       - gulp-grunt  //add all the gruntfile tasks to gulp
+       - gulp-if 提供条件判断
+       - gulp-ignore 根据条件忽略部分内容
+       - gulp-replace 对指定文件进行内容替换
+       - gulp-rimraf 清理目录，用来替代gulp-clean
+       - gulp-livereload: 服务器控制客户端同步刷新（需配合chrome插件LiveReload及tiny-lr）(这里选择browser-sync)
 
 `工程流工具    `     ------          `gulp`
 
@@ -19,7 +49,7 @@
 `版本控制     `     ------           `git`
 ---
 
-#### 1.1 why gulp
+#### 1.1 why gulp 「[gulp](https://www.gulpjs.com.cn/)」
 Gulp和Grunt的异同点
 
     易于使用：采用代码优于配置策略，Gulp让简单的事情继续简单，复杂的任务变得可管理。
@@ -157,7 +187,33 @@ Node中Stream的种类
 
 `cause:` ES6目前需要babel转码之后才能真正被浏览器运行（虽然少部分浏览器实现了部分ES6的语法）。但是很多时候我们的脚手架（比如我用的vue-cli）在打包的时候并不会去扫描node_moduls文件夹底下的js文件。因为node_moduls里面的文件太多了。这时候如果你的工具代码使用了ES6语法的话，被别的工程引入，打包的时候会报错。
 
+## typescript 安装 「[github](https://github.com/Microsoft/TypeScript)」
+
+    npm i -g typescript@next  //安装最新的typescript
+    tsc --version //查看typescript版本
+    npm install tsd -g  //tsd格式的描述信息方便开发工具进行智能提示
+
+    tsd install jquery angular --save //tsd安装范例
+    //同时候TSD工具还会为我们在typing目录下生产一个tsd.d.ts文件，它会为我们引入这些模板文件，使得IDE能够识别出这样模板文件：
+
+## 关于systemjs 「[github](https://github.com/systemjs/systemjs)」
+
+systemjs 是一个最小系统加载工具，用来创建插件来处理可替代的场景加载过程，包括加载 CSS 场景和图片，主要运行在浏览器和 NodeJS 中。它是 ES6 浏览器加载程序的的扩展，将应用在本地浏览器中。通常创建的插件名称是模块本身，要是没有特意指定用途，则默认插件名是模块的扩展名称。
+
+    systemjs于commonjs、requirejs等等都是为了实现javascript项目的模块化，也是当前的新技术，所以也把它放在这里，后续angular2等等会用到systemjs。
+
+    npm install systemjs --save
+
+## 关于WebStorm
+
+webstorm 10配置TypeScript，在`Languages & Frameworks > TypeScript`中设置 
+`command option： -m amd -t ES5`
+webstorm 10的版本tsc默认还在1.4，需要手动修改，
+建议升级webstorm到最新版本11以上，不然其对typescript和angular的支持始终比较蛋疼
 
 [参考博客](http://blog.csdn.net/chaos_hf/article/details/78735335) ～ chaos_hf ～
 
 [参考博客](http://blog.csdn.net/vuturn/article/details/52125938) ~ vuturn ~
+
+[参考博客](http://blog.csdn.net/cz_jjq/article/details/50425206) ~ cz_jjq的专栏 ~
+
