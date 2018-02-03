@@ -13,7 +13,9 @@
     5、客户端同步刷新显示修改
     6、构建项目前清除发布环境下的文件（保持发布环境的清洁）
     7. 脚手架工具 [Yeoman](http://yeoman.io/)
+
 ---
+
 `view        `     ------          `vuejs, bootstrap, jquery`
 
 `包管理工具`------ [bower](https://bower.io/),[npm](https://www.npmjs.com/)
@@ -48,10 +50,12 @@
 `单元测试集成  `------`karma + jasmine.`
 
 `版本控制`------`git`
+
 ---
 
 
 #### 1.1 why gulp 「[gulp](https://www.gulpjs.com.cn/)」
+
 Gulp和Grunt的异同点
 
     易于使用：采用代码优于配置策略，Gulp让简单的事情继续简单，复杂的任务变得可管理。
@@ -310,6 +314,7 @@ Node中Stream的种类
 `cause:` ES6目前需要babel转码之后才能真正被浏览器运行（虽然少部分浏览器实现了部分ES6的语法）。但是很多时候我们的脚手架（比如我用的vue-cli）在打包的时候并不会去扫描node_moduls文件夹底下的js文件。因为node_moduls里面的文件太多了。这时候如果你的工具代码使用了ES6语法的话，被别的工程引入，打包的时候会报错。
 
 [babel](https://babeljs.cn/docs/setup/)
+
 [es6 with babel or typescript](https://www.zhihu.com/question/34867499)
 
 ## 5. typescript 安装 「[github](https://github.com/Microsoft/TypeScript)」
