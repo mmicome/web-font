@@ -41,14 +41,15 @@
        - gulp-rimraf 清理目录，用来替代gulp-clean
        - gulp-livereload: 服务器控制客户端同步刷新（需配合chrome插件LiveReload及tiny-lr）(这里选择browser-sync)
 
-`前端构建工具    `     ------         `gulp`
+`前端构建工具    `------`gulp`
 
-`模块工具选择  `     ------          `webpack`
+`模块工具选择  `------`webpack`
 
-`单元测试集成  `     ------          `karma + jasmine.`
+`单元测试集成  `------`karma + jasmine.`
 
-`版本控制     `     ------           `git`
+`版本控制`------`git`
 ---
+
 
 #### 1.1 why gulp 「[gulp](https://www.gulpjs.com.cn/)」
 Gulp和Grunt的异同点
@@ -307,6 +308,9 @@ Node中Stream的种类
 虽然在上面的模块化中我们使用了ES6的语法，但是除此之外还是建议不要使用ES6的语法。
 
 `cause:` ES6目前需要babel转码之后才能真正被浏览器运行（虽然少部分浏览器实现了部分ES6的语法）。但是很多时候我们的脚手架（比如我用的vue-cli）在打包的时候并不会去扫描node_moduls文件夹底下的js文件。因为node_moduls里面的文件太多了。这时候如果你的工具代码使用了ES6语法的话，被别的工程引入，打包的时候会报错。
+
+[babel](https://babeljs.cn/docs/setup/)
+[es6 with babel or typescript](https://www.zhihu.com/question/34867499)
 
 ## 5. typescript 安装 「[github](https://github.com/Microsoft/TypeScript)」
 
