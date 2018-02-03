@@ -5,11 +5,17 @@
 
 ---
 `view        `     ------          `vuejs, bootstrap, jquery`
+
 `包管理工具    `     ------           `bower,npm`
+
     - browser-sync 能够开启一个静态web服务器，供测试，当源码发生变化时，可以自动刷新页面，不用担心缓存问题
+
 `工程流工具    `     ------          `gulp`
+
 `模块工具选择  `     ------          `webpack`
+
 `单元测试集成  `     ------          `karma + jasmine.`
+
 `版本控制     `     ------           `git`
 ---
 
