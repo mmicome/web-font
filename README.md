@@ -342,7 +342,7 @@ webstorm 10的版本tsc默认还在1.4，需要手动修改，
 建议升级webstorm到最新版本11以上，不然其对typescript和angular的支持始终比较蛋疼
 
 
-# important(相关细节请至原博客查看，此文只属于个人理解加相关知识点整理)
+# important(相关细节请至原博客查看，此文仅限于个人理解加相关知识点整理)
 
 [参考博客](http://blog.csdn.net/chaos_hf/article/details/78735335) ～ chaos_hf ～
 
