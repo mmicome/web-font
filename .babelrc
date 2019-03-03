@@ -1,0 +1,28 @@
+{
+    "plugins": [
+        [
+            "transform-runtime",
+            {
+                "helpers": false,
+                "polyfill": false,
+                "regenerator": true,
+                "moduleName": "babel-runtime"
+            }
+        ]
+    ],
+    "presets": [
+        [
+            "env",
+            {
+                "modules": false,
+                "target": {
+                    "browsers": ["last 2 versions", "safari >= 7"]
+                  },
+                  "include": [],
+                  "exclude": []
+            }
+        ],
+        "stage-2",
+        "react"
+    ]
+}
