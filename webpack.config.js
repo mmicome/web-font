@@ -7,7 +7,8 @@ module.exports = {
     entry: './app/src/index.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'app/dist')
+        path: path.resolve(__dirname, 'app/dist'),
+        publicPath: '/app/dist'
     },
     module: {
         rules: [{
@@ -41,6 +42,20 @@ module.exports = {
         jquery: 'jQuery'
     },
     devtool: 'source-map',
+    // devtool: 'eval',
+    devServer: {
+      // contentBase: path.join(__dirname, "dist"),
+      port: 8081,
+      host: '0.0.0.0',
+      headers: {
+        'X-foo': '112233'
+      },
+      // hot: true,
+      inline: true,
+      open: true,
+      overlay: true,
+      stats: 'errors-only'
+    },
     plugins: [
         // new ClearWebpackPlugin(['dist']),
         new ExtractTextPlugin({
