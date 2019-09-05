@@ -25,16 +25,15 @@ AMD规范全称是Asynchronous Module Definition，即异步模块加载机制�
 ```js
     define(“alpha”, [“require”, “exports”, “beta”], function (require, exports, beta) {
 
-    exports.verb = function() {
+          exports.verb = function() {
 
-    return beta.verb();
+                return beta.verb();
 
-    //或者:
+                //或者:
 
-    return require(“beta”).verb();
+                return require(“beta”).verb();
 
-    }
-
+          }
     });
 ```
 
@@ -47,16 +46,14 @@ AMD规范全称是Asynchronous Module Definition，即异步模块加载机制�
 ```js
     define([“alpha”], function (alpha) {
 
-    return {
+          return {
 
-    verb: function(){
+          verb: function(){
 
-    return alpha.verb() + 2;
+                return alpha.verb() + 2;
 
-    }
-
-    };
-
+                }
+          };
     });
 ```
 
@@ -68,23 +65,25 @@ AMD规范全称是Asynchronous Module Definition，即异步模块加载机制�
 ```js
     define({
 
-    provinces: [
+          provinces: [
 
-    {
+                {
 
-    name: ‘上海’,
+                      name: ‘上海’,
 
-    areas: [‘浦东新区’, ‘徐汇区’]},
+                      areas: [‘浦东新区’, ‘徐汇区’]
+                },
 
-    {
+                {
 
-    name: ‘江苏’,
+                      name: ‘江苏’,
 
-    cities: [‘南京’, ‘南通’]}
+                      cities: [‘南京’, ‘南通’]
+                }
 
-    //…
+                //…
 
-    ]
+          ]
 
     });
 ```
@@ -94,7 +93,7 @@ AMD规范全称是Asynchronous Module Definition，即异步模块加载机制�
 ```js
     define([‘china’, function(china){
 
-    //在这里使用中国省市数据
+          //在这里使用中国省市数据
 
     });
 ```
@@ -106,9 +105,9 @@ AMD规范全称是Asynchronous Module Definition，即异步模块加载机制�
 ```js
     define(function(){
 
-    var p = require(‘china’);
+          var p = require(‘china’);
 
-    //使用china这个模块
+          //使用china这个模块
 
     });
 ```
