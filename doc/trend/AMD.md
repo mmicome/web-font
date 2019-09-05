@@ -1,8 +1,11 @@
 # AMD
-
 AMD规范全称是Asynchronous Module Definition，即异步模块加载机制。
 从它的规范描述页面看，AMD很短也很简单，但它却完整描述了模块的定义，依赖关系，引用关系以及加载机制。
 从它被requireJS，NodeJs，Dojo，JQuery使用也可以看出它具有很大的价值，没错，JQuery近期也采用了AMD规范。
+
+AMD（异步模块定义）是为浏览器环境设计的，因为 CommonJS 模块系统是同步加载的，当前浏览器环境还没有准备好同步加载模块的条件。
+
+requirejs即为遵循AMD规范的模块化工具。 RequireJS的基本思想是，通过define方法，将代码定义为模块；通过require方法，实现代码的模块加载。
 
 ## AMD规范简单到只有一个API，即define函数：
 
