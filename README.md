@@ -8,5 +8,4 @@
 
 https://juejin.im/post/5ac9c6f451882555677ed301
 
-https://blog.csdn.net/qq379682421/article/details/89504402
 创建自己的cli 工具， 支持安装到客户端， 如 vue init + 模板文件（git远程拉取骨架）
