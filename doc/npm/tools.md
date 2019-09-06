@@ -5,3 +5,5 @@ https://segmentfault.com/a/1190000005857342
 nvm
 
 nrm
+
+npx
