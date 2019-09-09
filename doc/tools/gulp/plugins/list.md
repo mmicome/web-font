@@ -31,3 +31,47 @@ gulp-bump ： 更新版本号
 
 
 ```
+
+## plugins manager
+
+打包加载gulp插件,**前提：将插件下载好** , 下载打包插件：`gulp-load-plugins`
+
+`cnpm install gulp-load-plugins --save-dev`
+
+引入： var $ = require('gulp-load-plugins')();
+
+($就是函数执行后返回的对象，其他插件的方法都在$这个对象里面。)其他的插件不用再引入了
+
+使用方法：
+
+    var gulp = require('gulp');
+    var $ = require('gulp-load-plugins')();
+
+    // var concat = require('gulp-concat');
+    // var uglify = require('gulp-uglify');
+    // var rename = require('gulp-rename');
+    // var less = require('gulp-less');
+    // var cssClean = require('gulp-clean-css');
+    // var htmlMin = require('gulp-htmlmin');
+    // var livereload = require('gulp-livereload');
+    // var connect = require('gulp-connect');
+    
+所有的插件用$引出，其他插件的方法名统一为插件的名字(即插件, 如果有多个字符`-`相连，使用驼峰命名法) 在每个方法前面加上$.来调用该方法。
+
+gulp.task('css', ['less'],function() {
+    return gulp.src("src/css/*.css")
+               .pipe($.concat('build.css'))
+               .pipe($.rename({suffix: '.min'}))
+               .pipe($.cssClean({compatibility: 'ie8'}))
+               .pipe(gulp.dest('dist/css/'))
+               .pipe($.livereload())              //实时刷新
+               .pipe($.connect.reload())
+});
+
+gulp.task('html', function() {
+    return gulp.src('index.html')
+               .pipe($.htmlMin({collapseWhitespace: true}))
+               .pipe(gulp.dest('dist/'))
+               .pipe($.livereload())              //实时刷新
+               .pipe($.connect.reload())
+});
