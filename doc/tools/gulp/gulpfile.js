@@ -5,6 +5,7 @@ let concat = require('gulp-concat');  // 合并
 let uglify = require('gulp-uglify');  // 压缩
 let rename = require('gulp-rename');  // 重命名
 
+ let eslint = require('gulp-eslint');  //使用 eslint 或 jshint
  let jshint = require('gulp-jshint');  // 注意需要同时安装 jshint
  gulp.task('scripts', function() {  // 这个任务的名称是 scripts
  gulp.src('src/js/*.js')  // 将 src/js/ 目录下的所有 js 文件合并
