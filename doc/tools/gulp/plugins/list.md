@@ -58,6 +58,7 @@ gulp-bump ： 更新版本号
     
 所有的插件用$引出，其他插件的方法名统一为插件的名字(即插件, 如果有多个字符`-`相连，使用驼峰命名法) 在每个方法前面加上$.来调用该方法。
 
+```js
 gulp.task('css', ['less'],function() {
     return gulp.src("src/css/*.css")
                .pipe($.concat('build.css'))
@@ -75,3 +76,4 @@ gulp.task('html', function() {
                .pipe($.livereload())              //实时刷新
                .pipe($.connect.reload())
 });
+```
