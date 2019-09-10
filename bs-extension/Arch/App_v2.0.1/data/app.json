@@ -1,0 +1,1204 @@
+[
+  {
+    "title": "工具",
+    "app": [
+      {
+        "title": "前端趋势",
+        "action": "refer",
+        "url": "https://stateofjs.com/",
+        "content": "前端技术趋势分析报告",
+        "sign": true
+      },
+      {
+        "title": "jest",
+        "action": "refer",
+        "url": "https://github.com/facebook/jest",
+        "content": "js 测试工具",
+        "sign": true
+      },
+      {
+        "title": "enzyme",
+        "action": "refer",
+        "url": "https://github.com/airbnb/enzyme",
+        "content": "jest 配合使用",
+        "sign": false
+      },
+      {
+        "title": "JSDoc",
+        "action": "refer",
+        "url": "http://usejsdoc.org/about-getting-started.html",
+        "content": "js 文档生成工具",
+        "sign": false
+      },
+      {
+        "title": "Redux",
+        "action": "refer",
+        "url": "https://redux.js.org/",
+        "content": "React状态管理和数据抓取的首选解决方案。",
+        "sign": false
+      },
+      {
+        "title": "Webpack",
+        "action": "refer",
+        "url": "https://webpack.js.org/",
+        "content": "打包工具。",
+        "sign": false
+      },
+      {
+        "title": "Relay",
+        "action": "refer",
+        "url": "https://facebook.github.io/relay/",
+        "content": "比Redux更高效地抓取并传递GraphQL数据到React应用的GraphQL客户端框架",
+        "sign": false
+      },
+      {
+        "title": "Apollo",
+        "action": "refer",
+        "url": "https://github.com/ctripcorp/apollo",
+        "content": "比Redux更高效地抓取并传递GraphQL数据到React应用的GraphQL客户端框架",
+        "sign": false
+      },
+      {
+        "title": "Prettier",
+        "action": "refer",
+        "url": "https://github.com/prettier/prettier",
+        "content": "代码格式化程序",
+        "sign": false
+      },
+      {
+        "title": "Gatsby",
+        "action": "refer",
+        "url": "https://github.com/gatsbyjs/gatsby",
+        "content": "静态网站生成器",
+        "sign": false
+      },
+      {
+        "title": "parcel",
+        "action": "refer",
+        "url": "https://github.com/parcel-bundler/parcel",
+        "content": "一个快速，零配置的 Web 应用打包工具， 近10倍于webpack",
+        "sign": false
+      },
+      {
+        "title": "babel",
+        "action": "refer",
+        "url": "https://www.babeljs.cn/",
+        "content": "es6 工具",
+        "sign": false
+      },
+      {
+        "title": "fundebug",
+        "action": "refer",
+        "url": "https://docs.fundebug.com/",
+        "content": "错误监控工具",
+        "sign": false
+      },
+      {
+        "title": "PageSpeed",
+        "action": "refer",
+        "url": "https://developers.google.com/speed/",
+        "content": "Analyze and optimize your website with PageSpeed tools",
+        "sign": false
+      },
+      {
+        "title": "Web Starter Kit",
+        "action": "refer",
+        "url": "https://github.com/google/web-starter-kit",
+        "content": "Web Starter Kit 是用于 Web 开发的样板文件。在多台设备上构建卓越体验并且以性能为导向的工具, google推荐使用 Web Starter Kit 开发 PWA",
+        "sign": false
+      },
+      {
+        "title": "Emscripten ",
+        "action": "refer",
+        "url": "https://github.com/emscripten-core/emscripten",
+        "content": "Emscripten is a toolchain for compiling to asm.js and WebAssembly, built using LLVM, that lets you run C and C++ on the web at near-native speed without plugins.",
+        "sign": false
+      },
+      {
+        "title": "XHR爬虫",
+        "action": "reptile",
+        "url": "",
+        "content": "XHR 接口，返回数据信息爬取",
+        "sign": false
+      },
+      {
+        "title": "代码预览",
+        "action": "preview",
+        "url": "",
+        "content": "前端效果预览",
+        "sign": false
+      },
+      {
+        "title": "WebAssembly editor",
+        "action": "refer",
+        "url": "https://wasdk.github.io/WasmFiddle/",
+        "content": "WebAssembly editor",
+        "sign": false
+      },
+      {
+        "title": "WebAssembly Studio",
+        "action": "refer",
+        "url": "https://webassembly.studio/",
+        "content": "WebAssembly Studio",
+        "sign": false
+      },
+      {
+        "title": "autoLogin",
+        "action": "autoLogin",
+        "url": "",
+        "content": "自动登录",
+        "sign": false
+      },
+      {
+        "title": "Custom Elements Everywhere",
+        "action": "refer",
+        "url": "https://custom-elements-everywhere.com/",
+        "content": "This project runs a suite of tests against each framework to identify interoperability issues",
+        "sign": false
+      }
+    ]
+  },
+  {
+    "title": "框架 / 库",
+    "app": [
+      {
+        "title": "react",
+        "action": "refer",
+        "url": "https://reactjs.org/",
+        "content": "Facebook开发的一款高效、灵活、声明式设计的JS库",
+        "sign": false
+      },
+      {
+        "title": "vue",
+        "action": "refer",
+        "url": "https://cn.vuejs.org/",
+        "content": "Vue.js是一套构建用户界面的渐进式JavaScript框架",
+        "sign": false
+      },
+      {
+        "title": "angular",
+        "action": "refer",
+        "url": "https://angular.io/",
+        "content": "Google推出有条理，可维护，易编程的MVVM框架",
+        "sign": false
+      },
+      {
+        "title": "backbonejs",
+        "action": "refer",
+        "url": "https://backbonejs.org/",
+        "content": "提供：模型、集合、视图，开发重量级的javascript应用的框架",
+        "sign": false
+      },
+      {
+        "title": "nwjs",
+        "action": "refer",
+        "url": "https://nwjs.io/",
+        "content": "轻量级桌面应用开发的捷径",
+        "sign": false
+      },
+      {
+        "title": "emberjs",
+        "action": "refer",
+        "url": "https://www.emberjs.com/",
+        "content": "JavaScript MVC框架，它用来创建复杂的Web应用程序，消除了样板",
+        "sign": false
+      },
+      {
+        "title": "workbox",
+        "action": "refer",
+        "url": "https://developers.google.com/web/tools/workbox/",
+        "content": "谷歌推进的 web 应用新模型,将网站升级成 PWA",
+        "sign": false
+      },
+      {
+        "title": "Electronjs",
+        "action": "refer",
+        "url": "https://electronjs.org/",
+        "content": "使用 JavaScript, HTML 和 CSS 构建跨平台的桌面应用",
+        "sign": false
+      },
+      {
+        "title": "Immutable.js",
+        "action": "refer",
+        "url": "https://github.com/facebook/immutable-js/",
+        "content": "封装在Immutable.JS对象里面的数据是永远也不会变的。它总会返回一份新的拷贝",
+        "sign": false
+      },
+      {
+        "title": "Popmotion",
+        "action": "refer",
+        "url": "https://popmotion.io/",
+        "content": "Popmotion JavaScript动画库。 在web动画方面有了很多的创新",
+        "sign": false
+      },
+      {
+        "title": "next.js",
+        "action": "refer",
+        "url": "https://github.com/zeit/next.js/",
+        "url_zh": "https://zh.nuxtjs.org/",
+        "content": "",
+        "sign": false
+      },
+      {
+        "title": "React Native",
+        "action": "refer",
+        "url": "https://reactnative.cn/",
+        "content": "React Native使你只使用JavaScript也能编写原生移动应用。 它在设计原理上和React一致",
+        "sign": false
+      },
+      {
+        "title": "Polymer",
+        "action": "refer",
+        "url": "https://polymer-zh.cn/",
+        "content": "Polymer 3.0是用于构建Web组件的Polymer库的最新版本。",
+        "sign": false
+      },
+      {
+        "title": "LAVAS",
+        "action": "refer",
+        "url": "https://lavas.baidu.com/",
+        "content": "基于 Vue.js 的 PWA 解决方案帮助开发者快速搭建 PWA 应用",
+        "sign": false
+      },
+      {
+        "title": "sw-precache",
+        "action": "refer",
+        "url": "https://github.com/GoogleChromeLabs/sw-precache",
+        "content": "对过期内容实施精细控制，确保请求直接发送至网络",
+        "sign": false
+      },
+      {
+        "title": "webcomponentsjs",
+        "action": "refer",
+        "url": "https://github.com/webcomponents/webcomponentsjs",
+        "content": "这是一系列 Web Components 规范的 polyfill 集合，如果你的目标用户不是最新的现代浏览器，强烈建议引入这个库。",
+        "sign": false
+      },
+      {
+        "title": "microjs",
+        "action": "refer",
+        "url": "http://microjs.com/#mobile",
+        "content": "轻量级js类库搜索神器",
+        "sign": false
+      },
+      {
+        "title": "socketio",
+        "action": "refer",
+        "url": "https://socket.io/",
+        "content": "一个WebSocket库，包括了客户端的js和服务器端的nodejs",
+        "sign": false
+      },
+      {
+        "title": "mootools",
+        "action": "refer",
+        "url": "https://mootools.net/",
+        "content": "大部分浏览器原生对象做了扩展",
+        "sign": false
+      },
+      {
+        "title": "aurelia",
+        "action": "refer",
+        "url": "https://aurelia.io/",
+        "content": "Aurelia是下一代模块化,简单,可测试的 JS 框架",
+        "sign": false
+      },
+      {
+        "title": "plainjs",
+        "action": "refer",
+        "url": "https://plainjs.com/",
+        "content": "轻量级纯js类库，摒弃jquery",
+        "sign": false
+      }
+    ]
+  },
+  {
+    "title": "Web UI框架",
+    "app": [
+      {
+        "title": "Muse-UI",
+        "action": "refer",
+        "url": "https://muse-ui.org/#/zh-CN/progress",
+        "content": "基于 Vue 2.0 优雅的 Material Design UI 组件库",
+        "sign": false
+      },
+      {
+        "title": "UIkit",
+        "action": "refer",
+        "url": "http://www.getuikit.net/index.html",
+        "content": "YOOtheme团队开发的一款轻量级、模块化的前端框架",
+        "sign": false
+      },
+      {
+        "title": "Bootstrap",
+        "action": "refer",
+        "url": "https://getbootstrap.com/",
+        "content": "Build responsive, mobile-first projects on the web",
+        "sign": false
+      },
+      {
+        "title": "Foundation",
+        "action": "refer",
+        "url": "https://foundation.zurb.com/",
+        "content": "设计师框架",
+        "sign": false
+      },
+      {
+        "title": "Ant Design",
+        "action": "refer",
+        "url": "https://ant.design/index-cn",
+        "content": "使用 TypeScript 构建，开箱即用的高质量 React 组件",
+        "sign": false
+      }
+    ]
+  },
+  {
+    "title": "移动端框架",
+    "app": [
+      {
+        "title": "Spirit",
+        "action": "refer",
+        "url": "http://alloyteam.github.io/Spirit/",
+        "content": "Spirit并不是一个具体的框架或者工具，但是她是移动端一系列解决方案的整合与聚拢。她是Alloyteam开发团队在移动开发项目中通过大量实践、归纳、总结提炼而成，最终沉淀下来的一个体系，真正建立一套移动Web开发的集成解决方案。Spirit主要由5个部分组成：移动Web开发规范、JM、JMUI、Mobug、Mars。",
+        "sign": false
+      },
+      {
+        "title": "weUI",
+        "action": "refer",
+        "url": "https://weui.io/",
+        "content": "WeUI 是一套同微信原生视觉体验一致的基础样式库",
+        "sign": false
+      },
+      {
+        "title": "Zepto",
+        "action": "refer",
+        "url": "https://www.html.cn/doc/zeptojs_api/",
+        "content": "Zepto是一个轻量级的针对现代高级浏览器的JavaScript库",
+        "sign": false
+      },
+      {
+        "title": "Junior",
+        "action": "refer",
+        "url": "http://justspamjustin.github.io/junior/#home",
+        "content": "Junior为前端框架，用来构建基于HTML5的移动Web应用，外观与行为跟本地应用相似。它采用针对移动性能优化的CSS3转换，支持旋转灯箱效果，包含多样的Ratchet UI组件。整个框架使用Zepto（类似jQuery语法的轻量级移动设备js类库），且整合了backbone.js的视图和路由。Junior十分易于使用，且提供详细的文档及案例，便于学习。",
+        "sign": false
+      },
+      {
+        "title": "CardKit",
+        "action": "refer",
+        "url": "https://github.com/dexteryy/CardKit",
+        "content": " CardKit 是来自豆瓣的一个移动 UI 框架，使用 Card\\Unit\\Component 概念快速构建移动 Web 应用。应用外观跟原生应用无异。",
+        "sign": false
+      },
+      {
+        "title": "Frozen UI",
+        "action": "refer",
+        "url": "http://frozenui.github.io/",
+        "content": "专注于移动web的UI框架,基于腾讯手机QQ规范",
+        "sign": false
+      },
+      {
+        "title": "Amaze ~ 妹子 UI",
+        "action": "refer",
+        "url": "http://amazeui.org/",
+        "content": "HTML5 跨屏前端框架",
+        "sign": false
+      },
+      {
+        "title": "MUI",
+        "action": "refer",
+        "url": "http://dev.dcloud.net.cn/mui/",
+        "content": "最接近原生APP体验的高性能前端框架， UI 是以 IOS 为 主体设计的, 可多端发布到Appstore、Android市场、浏览器、微信公众号、百度直达号及流应用。HBuilder编辑器推荐使用的移动端UI框架",
+        "sign": false
+      },
+      {
+        "title": "SUI Mobile",
+        "action": "refer",
+        "url": "http://m.sui.taobao.org/getting-started/",
+        "content": "介绍 SUI Mobile 是一套基于 Framework7 开发的UI库。它非常轻量、精美，阿里前端团队出品的SUI Mobile的前端UI库，方便迅速搭建手机H5应用,也非常适合开发跨平台Web App。",
+        "sign": false
+      },
+      {
+        "title": "VUX",
+        "action": "refer",
+        "url": "https://vux.li/#/zh-CN/README?id=%E7%AE%80%E4%BB%8B",
+        "content": "是基于WeUI和Vue(2.x)开发的移动端UI组件库，主要服务于微信页面。 基于webpack+vue-loader+vux可以快速开发移动端页面",
+        "sign": false
+      },
+      {
+        "title": "WEEX",
+        "action": "refer",
+        "url": "http://weex-project.io/cn/guide/",
+        "content": "Weex 是一套简单易用的跨平台开发方案，能以 web 的开发体验构建高性能、可扩展的 native 应用，为了做到这些，Weex 与 Vue 合作，使用 Vue 作为上层框架",
+        "sign": false
+      },
+      {
+        "title": "Ant Design Mobile",
+        "action": "refer",
+        "url": "https://mobile.ant.design/index-cn",
+        "content": "antd-mobile 是 Ant Design 的移动规范的 React 实现，服务于蚂蚁及口碑无线业务",
+        "sign": false
+      },
+      {
+        "title": "vue-carbon",
+        "action": "refer",
+        "url": "https://github.com/myronliu347/vue-carbon",
+        "content": "基于 vuejs 1.0 开发 material design 风格的移动端 WEB UI 库, 设计资源参考 CARBON FrameWork7",
+        "sign": false
+      },
+      {
+        "title": "YDUI Touch",
+        "action": "refer",
+        "url": "https://github.com/myronliu347/vue-carbon",
+        "content": "代码轻、性能高;使用 Flex 技术移动端&微信UI, 支持vue2.0版本",
+        "sign": false
+      },
+      {
+        "title": "vonic",
+        "action": "refer",
+        "url": "https://wangdahoo.github.io/vonic-documents/#/?id=vonic-%E7%BB%84%E4%BB%B6",
+        "content": "一个基于 vue.js 和 ionic 样式的 UI 框架，用于快速构建移动端单页应用。",
+        "sign": false
+      },
+      {
+        "title": "Mint UI",
+        "action": "refer",
+        "url": "https://wangdahoo.github.io/vonic-documents/#/?id=vonic-%E7%BB%84%E4%BB%B6",
+        "content": "基于 Vue.js 的移动端组件库 ",
+        "sign": false
+      },
+      {
+        "title": "ionic",
+        "action": "refer",
+        "url": "https://ionicframework.com/",
+        "content": "ionic 是一个强大的 HTML5 应用程序开发框架， 基于Angular语法",
+        "sign": false
+      },
+      {
+        "title": "sheral",
+        "action": "refer",
+        "url": "https://github.com/imweb/sheral",
+        "content": "基于sandal（基础sass库）扩展的移动端UI库",
+        "sign": false
+      },
+      {
+        "title": "jQuery WeUI",
+        "action": "refer",
+        "url": "https://jqweui.cn/",
+        "content": "微信公众号开发的瑞士军刀",
+        "sign": false
+      },
+      {
+        "title": "mpvue",
+        "action": "refer",
+        "url": "http://mpvue.com/",
+        "content": "是一个使用 Vue.js 开发小程序的前端框架",
+        "sign": false
+      },
+      {
+        "title": "mpvue",
+        "action": "refer",
+        "url": "http://mpvue.com/",
+        "content": "是一个使用 Vue.js 开发小程序的前端框架",
+        "sign": false
+      },
+      {
+        "title": "WePY",
+        "action": "refer",
+        "url": "https://tencent.github.io/wepy/",
+        "content": "WePY 框架在开发过程中参考了 Vue 等现有框架的一些语法风格和功能特性，对原生小程序的开发模式进行了再次封装，更贴近于 MVVM 架构模式, 并支持ES6/7的一些新特性",
+        "sign": false
+      }
+    ]
+  },
+  {
+    "title": "技术前沿",
+    "app": [
+      {
+        "title": "WebAssembly",
+        "action": "refer",
+        "url": "http://webassembly.org.cn/",
+        "url_en": "https://webassembly.org/",
+        "content": "WebAssembly/wasm WebAssembly 或者 wasm 是一个可移植、体积小、加载快并且兼容 Web 的全新格式",
+        "sign": false
+      },
+      {
+        "title": "PWA(Progressive Web Apps)",
+        "action": "refer",
+        "url": "https://developers.google.com/web/progressive-web-apps/",
+        "content": "让网页使用如同App般的体验的一系列方案",
+        "sign": false
+      },
+      {
+        "title": "GraphQL ",
+        "action": "refer",
+        "url": "https://graphql.cn/",
+        "url_en": "https://graphql.org/learn/",
+        "content": "革命性的 API 工具，继续挑战 REST",
+        "sign": false
+      },
+      {
+        "title": "TypeScript",
+        "action": "refer",
+        "url": "https://www.tslang.cn/docs/home.html",
+        "content": "TypeScript由微软开发。它是JavaScript的一个超集案",
+        "sign": false
+      },
+      {
+        "title": "AssemblyScript",
+        "action": "refer",
+        "url": "https://github.com/AssemblyScript/assemblyscript",
+        "content": "TypeScript 的子集， 用于开发WebAssembly（推荐）",
+        "sign": false
+      },
+      {
+        "title": "Reason",
+        "action": "refer",
+        "url": "https://reasonml.github.io/",
+        "content": "Reason lets you write simple, fast and quality type safe code while leveraging both the JavaScript & OCaml ecosystems.",
+        "sign": false
+      },
+      {
+        "title": "elm",
+        "action": "refer",
+        "url": "https://elm-lang.org/",
+        "content": "A delightful language for reliable webapps. Generate JavaScript with great performance and no runtime exceptions.",
+        "sign": false
+      },
+      {
+        "title": "Web3.js",
+        "action": "refer",
+        "url": "https://github.com/ethereum/web3.js/",
+        "url_zh": "http://web3.tryblockchain.org/",
+        "content": "A free, once–weekly email roundup of JavaScript news and articles.",
+        "sign": false
+      },
+      {
+        "title": "CSS in JS",
+        "action": "topic",
+        "url": "",
+        "data": {
+          "JSS": "https://cssinjs.org/?v=v10.0.0-alpha.10",
+          "polished": "https://polished.js.org/",
+          "React": "https://github.com/MicheleBertoli/css-in-js"
+        },
+        "content": "关于 css in js 的讨论及资源",
+        "sign": false
+      }
+    ]
+  },
+  {
+    "title": "技术峰会",
+    "app": [
+      {
+        "title": "Chrome开发峰会",
+        "action": "refer",
+        "time": "",
+        "url": "https://www.youtube.com/channel/UCQqa5UIHtrnpiADC3eHFupw",
+        "content": "",
+        "sign": true
+      },
+      {
+        "title": "google io",
+        "action": "refer",
+        "time": "",
+        "url": "https://events.google.com/io/",
+        "content": "google网络开发者年会，讨论的焦点是用Google和开放网络技术开发网络应用",
+        "sign": true
+      },
+      {
+        "title": "QCon",
+        "action": "refer",
+        "time": "",
+        "url": "https://2019.qconbeijing.com/",
+        "content": "全球QCon大会2019",
+        "sign": true
+      }
+    ]
+  },
+  {
+    "title": "developers",
+    "app": [
+      {
+        "title": "Google Developers",
+        "action": "refer",
+        "url": "https://developers.google.com/",
+        "content": "Build anything with Google",
+        "sign": false
+      },
+      {
+        "title": "Google Developer",
+        "action": "refer",
+        "url": "https://developer.chrome.com/",
+        "content": "Build anything with Google",
+        "sign": false
+      },
+      {
+        "title": "Sackoverflow",
+        "action": "refer",
+        "url": "https://stackoverflow.com/?tab=month",
+        "content": "Stackoverflow Top Questions",
+        "sign": false
+      },
+      {
+        "title": "MDN",
+        "action": "refer",
+        "url": "https://developer.mozilla.org/zh-CN/",
+        "content": "MDN web doc",
+        "sign": false
+      },
+      {
+        "title": "css-tricks",
+        "action": "refer",
+        "url": "https://css-tricks.com/",
+        "content": "css-tricks",
+        "sign": false
+      },
+      {
+        "title": "Codrops",
+        "action": "refer",
+        "url": "https://tympanus.net/",
+        "content": "In this section you will find in-depth how-tos involving common web development and web design techniques.",
+        "sign": false
+      }
+    ]
+  },
+  {
+    "title": "Blog",
+    "app": [
+      {
+        "title": "淘宝前端团队（FED）",
+        "action": "refer",
+        "url": "http://taobaofed.org/blog/2018/10/31/a-tag/",
+        "content": "用技术为体验提供无限可能",
+        "sign": false
+      },
+      {
+        "title": "腾讯前端团队（alloyteam）",
+        "action": "refer",
+        "url": "http://www.alloyteam.com/",
+        "content": "用技术为体验提供无限可能",
+        "sign": false
+      },
+      {
+        "title": "百度前端团队（fex）",
+        "action": "refer",
+        "url": "http://fex.baidu.com/",
+        "content": "用技术为体验提供无限可能",
+        "sign": false
+      }
+    ]
+  },
+  {
+    "title": "Design",
+    "app": [
+      {
+        "title": "Material Design",
+        "action": "refer",
+        "url": "https://material.io/design/",
+        "content": "Create intuitive and beautiful products with Material Design.",
+        "sign": false
+      },
+      {
+          "title": "ISUX",
+          "url": "https://isux.tencent.com/",
+          "action": "refer",
+          "content": " 腾讯社交用户体验设计，简称ISUX，腾讯设计团队网站\n      ",
+          "sign": "false"
+      },
+      {
+          "title": "Iconsfeed ",
+          "url": "http://www.iconsfeed.com/",
+          "action": "refer",
+          "content": "iOS 应用图标的收集站点，分类展示了各个 iOS 应用图标",
+          "sign": "false"
+      },
+      {
+          "title": "Reeoo",
+          "url": "http://reeoo.com/",
+          "action": "refer",
+          "content": "时尚潮流网站设计欣赏网",
+          "sign": "false"
+      },
+      {
+          "title": "网易UED ",
+          "url": "http://uedc.163.com/",
+          "action": "refer",
+          "content": "网易用户体验设计中心",
+          "sign": "false"
+      },
+      {
+          "title": "Dribbble",
+          "url": "https://dribbble.com/",
+          "action": "refer",
+          "content": "一个展示和讲述，促进，发现，探索设计",
+          "sign": "false"
+      },
+      {
+          "title": "百度UED",
+          "url": "http://ued.baidu.com/",
+          "action": "refer",
+          "content": "百度用户体验中心",
+          "sign": "false"
+      },
+      {
+          "title": "新浪UED ",
+          "url": "http://ued.sina.com/",
+          "action": "refer",
+          "content": "新浪网用户体验设计团队。",
+          "sign": "false"
+      },
+      {
+          "title": "Aribnb Design",
+          "url": "https://airbnb.design/",
+          "action": "refer",
+          "content": "Airbnb 设计团队官网",
+          "sign": "false"
+      },
+      {
+          "title": "畅游视觉设计中心",
+          "url": "http://vc.changyou.com/",
+          "action": "refer",
+          "content": "用爱去释放奇妙的设计魔法，描绘让你我感动的虚拟人生",
+          "sign": "false"
+      },
+      {
+          "title": "JDC",
+          "url": "http://jdc.jd.com/",
+          "action": "refer",
+          "content": "注于电子商务视觉设计、交互设计、用户研究、前端开发",
+          "sign": "false"
+      },
+      {
+          "title": "Facebook Design",
+          "url": "http://facebook.design/",
+          "action": "refer",
+          "content": "Facebook设计团队",
+          "sign": "false"
+      },
+      {
+          "title": "Google Design",
+          "url": "https://design.google.com",
+          "action": "refer",
+          "content": "谷歌设计团队官网",
+          "sign": "false"
+      },
+      {
+          "title": "U一点",
+          "url": "http://www.aliued.cn/",
+          "action": "refer",
+          "content": "阿里巴巴（中国站）用户体验设计部博客U一点设计 UED团队    ",
+          "sign": "false"
+      },
+      {
+          "title": "Behance",
+          "url": "https://www.behance.net/",
+          "action": "refer",
+          "content": "来自世界各地的设计师在这里分享自己的作品 ",
+          "sign": "false"
+      },
+      {
+          "title": "UI中国",
+          "url": "http://www.ui.cn/",
+          "action": "refer",
+          "content": "专业用户体验设计平台",
+          "sign": "false"
+      },
+      {
+          "title": "UpLabs",
+          "url": "https://www.uplabs.com/",
+          "action": "refer",
+          "content": "设计作品展示、分析，设计素材下载，交易平台",
+          "sign": "false"
+      },
+      {
+          "title": "CSS Design Awards",
+          "url": "https://www.cssdesignawards.com/",
+          "action": "refer",
+          "content": "网站设计欣赏与评选",
+          "sign": "false"
+      },
+      {
+          "title": "Inspiration UI",
+          "url": "http://inspirationui.com/",
+          "action": "refer",
+          "content": "从实际项目中寻找设计灵感，支持搜索与分类检索。",
+          "sign": "false"
+      },
+      {
+          "title": "站酷网",
+          "url": "http://www.zcool.com.cn/",
+          "action": "refer",
+          "content": "设计师互动平台，打开站酷，发现更好的设计！",
+          "sign": "false"
+      },
+      {
+          "title": "Web Designer Depot",
+          "url": "https://www.webdesignerdepot.com/",
+          "action": "refer",
+          "content": "提供设计文章与教程",
+          "sign": "false"
+      },
+      {
+          "title": "字体传奇网",
+          "url": "http://www.ziticq.com/",
+          "action": "refer",
+          "content": "中国首个字体品牌设计师交流网",
+          "sign": "false"
+      },
+      {
+          "title": "花瓣网",
+          "url": "http://huaban.com/",
+          "action": "refer",
+          "content": "发现、采集你喜欢的UI设计素材、交互设计素材",
+          "sign": "false"
+      },
+      {
+          "title": "Lapa",
+          "url": "https://www.lapa.ninja/",
+          "action": "refer",
+          "content": "产品官网、落地页设计欣赏。",
+          "sign": "false"
+      },
+      {
+          "title": "GAMEUI",
+          "url": "http://www.gameui.cn",
+          "action": "refer",
+          "content": "游戏类UI设计师的作品展示与交流平台",
+          "sign": "false"
+      },
+      {
+          "title": "Collect UI",
+          "url": "http://collectui.com/",
+          "action": "refer",
+          "content": "UI设计欣赏，支持按照分类检索",
+          "sign": "false"
+      },
+      {
+          "title": "UE设计平台",
+          "url": "http://www.uedna.com/",
+          "action": "refer",
+          "content": "设计师交流平台，专为热爱网页设计、界面设计的你而倾力打造",
+          "sign": "false"
+      },
+      {
+          "title": "AndroidUX",
+          "url": "http://androidux.com/",
+          "action": "refer",
+          "content": "安卓设备UI设计欣赏及文章",
+          "sign": "false"
+      },
+      {
+          "title": "iOSpirations",
+          "url": "http://www.iospirations.com/",
+          "action": "refer",
+          "content": "UI设计欣赏与iOS 与 macOS 设计素材",
+          "sign": "false"
+      },
+      {
+          "title": "Logopond",
+          "url": "https://logopond.com/",
+          "action": "refer",
+          "content": "一款LOGO 设计欣赏的网站",
+          "sign": "false"
+      },
+      {
+          "title": "Awwwards",
+          "url": "https://www.awwwards.com/",
+          "action": "refer",
+          "content": "权威的网站设计评选平台，了解最新网站设计趋势。",
+          "sign": "false"
+      },
+      {
+          "title": "The FWA",
+          "url": "https://thefwa.com/",
+          "action": "refer",
+          "content": "网站设计欣赏与评奖",
+          "sign": "false"
+      },
+      {
+          "title": "MobileMozaic",
+          "url": "http://www.mobilemozaic.com/",
+          "action": "refer",
+          "content": "移动端 UI 设计欣赏，可通过分类和组件元素进行筛选查找",
+          "sign": "false"
+      },
+      {
+          "title": "Logo Faves",
+          "url": "http://logofaves.com/",
+          "action": "refer",
+          "content": "一款LOGO 设计欣赏的网站",
+          "sign": "false"
+      },
+      {
+          "title": "APKUI",
+          "url": "http://www.apkui.com/",
+          "action": "refer",
+          "content": "安卓应用界面设计欣赏",
+          "sign": "false"
+      },
+      {
+          "title": "Designspiration",
+          "url": "https://www.designspiration.net/",
+          "action": "refer",
+          "content": "发现、分享优秀的设计作品",
+          "sign": "false"
+      },
+      {
+          "title": "siteInspire",
+          "url": "https://www.siteinspire.com/",
+          "action": "refer",
+          "content": "一款网页设计与交互设计欣赏的网站",
+          "sign": "false"
+      },
+      {
+          "title": "The Design Inspiration",
+          "url": "http://thedesigninspiration.com/",
+          "action": "refer",
+          "content": "网页、LOGO、插画、名片等设计欣赏",
+          "sign": "false"
+      },
+      {
+          "title": "Land-book",
+          "url": "https://land-book.com/",
+          "action": "refer",
+          "content": "提供产品官网、落地页等设计欣赏的网站",
+          "sign": "false"
+      },
+      {
+          "title": "One Page Love",
+          "url": "https://onepagelove.com/",
+          "action": "refer",
+          "content": "单页面网站设计欣赏，模版下载、交易",
+          "sign": "false"
+      },
+      {
+          "title": "SiteSee",
+          "url": "https://sitesee.co/",
+          "action": "refer",
+          "content": "酷站欣赏，支持分类检索与搜索",
+          "sign": "false"
+      },
+      {
+          "title": "UI Garage",
+          "url": "http://uigarage.net/",
+          "action": "refer",
+          "content": "网页设计、移动UI设计欣赏",
+          "sign": "false"
+      },
+      {
+          "title": "Product Hunt",
+          "url": "https://www.producthunt.com/",
+          "action": "refer",
+          "content": "分享全世界最新产品和创意，随时了解最新创意产品",
+          "sign": "false"
+      },
+      {
+          "title": "Sketch",
+          "url": "https://sketchapp.com/",
+          "action": "refer",
+          "content": "Mac 上的 UI/UX 设计软件",
+          "sign": "false"
+      },
+      {
+          "title": "Carrd",
+          "url": "https://carrd.co/",
+          "action": "refer",
+          "content": "在线响应式模版设计工具",
+          "sign": "false"
+      },
+      {
+          "title": "盒子UI",
+          "url": "http://www.boxui.com/",
+          "action": "refer",
+          "content": "分享以用户体验为中心的设计",
+          "sign": "false"
+      },
+      {
+          "title": "Mobbin",
+          "url": "https://mobbin.design/",
+          "action": "refer",
+          "content": "最新移动端设计作品集合",
+          "sign": "false"
+      },
+      {
+          "title": "EvaIcons",
+          "url": "https://akveo.github.io/eva-icons/#/",
+          "action": "refer",
+          "content": "免费开移动端源图标素材库",
+          "sign": "false"
+      },
+      {
+          "title": "素材岛",
+          "url": "http://www.sucaidao.com/",
+          "action": "refer",
+          "content": "图片素材、设计素材网【创意图片】",
+          "sign": "false"
+      },
+      {
+          "title": "Topys",
+          "url": "https://www.topys.cn/",
+          "action": "refer",
+          "content": "全球顶尖创意分享平台",
+          "sign": "false"
+      },
+      {
+          "title": "燃设计",
+          "url": "http://www.ransheji.com/",
+          "action": "refer",
+          "content": "免费高清室内设计图",
+          "sign": "false"
+      },
+      {
+          "title": "FDR",
+          "url": "https://freedesignresources.net/",
+          "action": "refer",
+          "content": "免费高品质设计资源的站点",
+          "sign": "false"
+      },
+      {
+          "title": "七米设计",
+          "url": "http://www.7msj.com/",
+          "action": "refer",
+          "content": "免费电商设计师交流平台",
+          "sign": "false"
+      },
+      {
+          "title": "设计小咖",
+          "url": "https://www.iamxk.com/",
+          "action": "refer",
+          "content": "致力打造一个属于设计师的圈子的网站",
+          "sign": "false"
+      },
+      {
+          "title": "Abduzeedo",
+          "url": "https://abduzeedo.com/",
+          "action": "refer",
+          "content": "每日分享高品质设计创意灵感",
+          "sign": "false"
+      },
+      {
+          "title": "Uigarage",
+          "url": "https://uigarage.net/",
+          "action": "refer",
+          "content": "高级美，UI设计灵感炸裂之地",
+          "sign": "false"
+      },
+      {
+          "title": "优阁网",
+          "url": "http://www.uigreat.com/",
+          "action": "refer",
+          "content": "UI设计师学习交流社区",
+          "sign": "false"
+      }
+    ]
+  },
+  {
+    "title": "c/c++",
+    "app": [
+      {
+        "title": "Cheerp",
+        "action": "refer",
+        "url": "https://github.com/leaningtech",
+        "content": "Cheerp compiles C/C++ into WebAssembly, JavaScript, or a combination, with no-overhead DOM and Web APIs access.",
+        "sign": false
+      }
+    ]
+  },
+  {
+    "title": "资源",
+    "app": [
+      {
+        "title": "脚本之家",
+        "action": "refer",
+        "url": "https://www.jb51.net/",
+        "content": "网络电子书",
+        "sign": false
+      },
+      {
+        "title": "div.io",
+        "action": "refer",
+        "url": "https://div.io/digg",
+        "content": "前端资源探索（暂未更新）",
+        "sign": false
+      }
+    ]
+  },
+  {
+    "title": "Linux",
+    "app": [
+      {
+        "title": "Linux内核之旅",
+        "action": "refer",
+        "url": "http://www.kerneltravel.net/",
+        "content": "Linux内核之旅",
+        "sign": false
+      }
+    ]
+  },
+  {
+    "title": "IT weekly",
+    "app": [
+      {
+        "title": "FRONT-END TECHNOLOGIES",
+        "action": "refer",
+        "url": "https://uptodate.frontendrescue.org/#find-the-best-sources",
+        "content": "An important part of our job as front-end developers is keeping up to date and staying close to new tools, trends and workflows.",
+        "sign": false
+      },
+      {
+        "title": "statuscode",
+        "action": "refer",
+        "url": "http://statuscode.com/",
+        "content": "Weekly article",
+        "sign": false
+      },
+      {
+        "title": "sitepoint",
+        "action": "refer",
+        "url": "https://www.sitepoint.com/",
+        "content": "",
+        "sign": false
+      },
+      {
+        "title": "Github Trending",
+        "action": "refer",
+        "url": "https://github.com/trending?since=weekly",
+        "content": "See what the GitHub community is most excited about this week.",
+        "sign": false
+      },
+      {
+        "title": "Github Explore",
+        "action": "refer",
+        "url": "https://github.com/explore",
+        "content": "Explore Github",
+        "sign": false
+      },
+      {
+        "title": "Frontend Focus",
+        "action": "refer",
+        "url": "https://frontendfoc.us/",
+        "content": "A once–weekly roundup of the best front-end news",
+        "sign": false
+      },
+      {
+        "title": "Docker Weekly",
+        "action": "refer",
+        "url": "https://www.docker.com/",
+        "content": "A once–weekly roundup of the best front-end news",
+        "sign": false
+      }
+    ]
+  },
+  {
+    "title": "IT News",
+    "app": [
+      {
+        "title": "DZone",
+        "action": "refer",
+        "url": "https://dzone.com/",
+        "content": "",
+        "sign": false
+      }
+    ]
+  }
+]

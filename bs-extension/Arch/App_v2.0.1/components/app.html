@@ -1,0 +1,33 @@
+<template id="">
+    <style>
+        :host {
+            position: relative;
+            float: left;
+            box-sizing: border-box;
+            width: 150px;
+            height: 60px;
+            padding: 0 5px 5px 5px;
+            margin-bottom: 10px;
+            background: #fff;
+            overflow: hidden;
+            font-family: cursive;
+        }
+
+        :host(:nth-of-type(odd)) {
+            margin-right: 10px;
+        }
+
+        header {
+            padding: 3px 3px 3px 0;
+            color: #1abc9c;
+            font-size: 13px;
+            cursor: pointer;
+        }
+    </style>
+
+    <app>
+        <header></header>
+        <article></article>
+        <solt name="my-sign"></solt>
+    </app>
+</template>

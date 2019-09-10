@@ -1,0 +1,53 @@
+{
+  "name": "x-tip",
+  "version": "1.0.0",
+  "description": "js info tip component",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "favico.js": "^0.3.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@webcomponents/webcomponentsjs": "^2.2.7",
+    "babel-connect": "^6.0.2",
+    "babel-loader": "^8.0.0-beta.0",
+    "http-server": "^0.11.1",
+    "livereload": "^0.7.0",
+    "npm-watch": "^0.6.0",
+    "opener": "^1.5.1",
+    "rimraf": "^2.6.3",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "buildbabel": "babel src -d dist",
+    "server": "http-server -p 9090",
+    "open:dev": "opener http://localhost:9090",
+    "clean": "rimraf dist/*",
+    "livereload": "live-reload --port 9091",
+    "watch:css": "watch 'npm run build:css' assets/styles/",
+    "watch:html": "watch 'npm run build:html' assets/html",
+    "build:favicon": "node scripts/favicon.js",
+    "test": "opener ./demo/demo.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmicome/x-tip.git"
+  },
+  "keywords": [
+    "info",
+    "tip",
+    "js",
+    "component"
+  ],
+  "author": "icome",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmicome/x-tip/issues"
+  },
+  "homepage": "https://github.com/mmicome/x-tip#readme"
+}

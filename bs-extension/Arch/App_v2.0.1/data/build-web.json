@@ -1,0 +1,18 @@
+    var arrtmp = [];
+    var a = document.querySelectorAll('.pli');
+    for (var j = 0; j < a.length; j++) {
+        var title = a[j].querySelector('.tit').textContent
+        var content = a[j].querySelector('.ms').textContent
+		var official = a[j].querySelector('.foo > a').getAttribute('href');
+ 		var github = a[j].querySelector('.foo > a:last-child').getAttribute('href');
+        var b = {
+            title: title,
+            official: official,
+			github: github,
+            action: "refer",
+            content: content,
+            sign: "false"
+        };
+        arrtmp.push(b);
+    }
+JSON.stringify(arrtmp)

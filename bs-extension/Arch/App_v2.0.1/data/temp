@@ -1,0 +1,72 @@
+{
+    "title": "Evan You",
+    "action": "refer",
+    "url": "https://github.com/yyx990803",
+    "content": "前端轻量级框架MVVM框架vue.js作者，前Google工程师",
+    "sign": true
+}
+{
+    "title": "js support",
+    "action": "refer",
+    "url": "http://kangax.github.io/compat-table/es6/",
+    "content": "js 支持现状",
+    "sign": true
+}
+{
+    "title": "TJ Holowaychuk",
+    "action": "refer",
+    "url": "https://github.com/tj",
+    "content": "Luna 编程语言, Koa, Express, Stylus, Cluster, Mocha, Jade, node-canvas, component 等知名开源项目的创建和贡献者。",
+    "sign": true
+}
+{
+    "title": "Nicolas Gallagher",
+    "action": "refer",
+    "url": "https://github.com/necolas",
+    "content": "Normalize.css 作者",
+    "sign": true
+}
+{
+    "title": "Mike Bostock",
+    "action": "refer",
+    "url": "https://github.com/mbostock",
+    "content": "知名可视化库 D3.js的主要作者",
+    "sign": true
+}
+{
+    "title": "Sindre Sorhus",
+    "action": "refer",
+    "url": "https://github.com/sindresorhus",
+    "content": "github 排名第一的大神",
+    "sign": true
+}
+{
+    "title": "Paul Irish",
+    "action": "refer",
+    "url": "https://github.com/paulirish",
+    "content": "著名的前端开发工程师，同时他也是Chrome开发者关系团队成员，jQuery团队成员，Modernizr、Yeoman、CSS3 Please和HTML5 Boilerplate的lead developer",
+    "sign": true
+}
+{
+    "title": "司徒正美",
+    "action": "refer",
+    "url": "https://github.com/RubyLouvre",
+    "content": "前端迷你MVVM框架Avalon作者",
+    "sign": true
+}
+
+{
+    "title": "ecma",
+    "action": "refer",
+    "url": "http://www.ecma-international.org/publications/standards/Standard.htm",
+    "content": "ecma 标准文档",
+    "sign": true
+}
+
+浏览器演进图谱
+https://upload.wikimedia.org/wikipedia/commons/7/74/Timeline_of_web_browsers.svg
+中国第五届CSS大会
+https://css.w3ctech.com/
+
+js兼容性表
+http://kangax.github.io/compat-table/es6/

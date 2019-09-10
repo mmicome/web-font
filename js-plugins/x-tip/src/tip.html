@@ -1,0 +1,55 @@
+<template id="app-tip">
+        <style>
+            :host {
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+            }
+
+            .tip_sign {
+                width: 15px;
+                height: 15px;
+                color: white;
+                background: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlLz48L2RlZnM+PHBhdGggZD0iTTUxMi4wMDMgNjUuMjljLTI0Ni43IDAtNDQ2LjcxMiAyMDAuMDQ1LTQ0Ni43MTIgNDQ2LjcxMiAwIDI0Ni43MTQgMjAwLjAxMyA0NDYuNzA3IDQ0Ni43MTIgNDQ2LjcwNyAyNDYuNjg3IDAgNDQ2LjcwNS0xOTkuOTkzIDQ0Ni43MDUtNDQ2LjcwNyAwLTI0Ni42NjctMjAwLjAxOC00NDYuNzEyLTQ0Ni43MDUtNDQ2LjcxMnptMTAuOTM0IDE1Ny44NTFjNDAuMTMgMCA3Mi41OTcgMzIuNTM1IDcyLjU5NyA3Mi41NzcgMCA0MC4xMzUtMzIuNDY3IDcyLjYyNy03Mi41OTcgNzIuNjI3LTQwLjA0MSAwLTcyLjYtMzIuNDkyLTcyLjYtNzIuNjI3LS4wMDUtNDAuMDQyIDMyLjU1OS03Mi41NzcgNzIuNi03Mi41Nzd6TTY1MS45OTggNzcxLjI4SDQwOC44OTR2LTMxLjg1M2wzMC40NDMtMTEuMjQ3YzE3LjA0LTYuMjYyIDI4LjM4NC0yMi41NTcgMjguMzg0LTQwLjY2M1Y1MTUuNzkzYzAtMTguMTM3LTExLjM0LTM0LjQtMjguMzg0LTQwLjYzNGwtMzAuNDQzLTExLjI3M3YtMzIuNTM5aDE4NC4yNVY2ODcuNTJjMCAxOC4xIDExLjM0MiAzNC40IDI4LjQxNyA0MC42NThsMzAuNDM4IDExLjI1djMxLjg1MWgtLjAwMXptMCAwIi8+PC9zdmc+);
+                background-size: 15px 15px;
+                cursor: pointer;
+            }
+
+            .tip_info {
+                position: absolute;
+                left: 30px;
+                min-width: 150px;
+                max-width: 300px;
+                padding: 3px 8px;
+                color: #000;
+                background: #fff;
+                box-shadow: 1px 1px 2px 1px #ccc;
+                z-index: 100;
+            }
+
+            .tip_info::before {
+                position: absolute;
+                left: -4px;
+                width: 8px;
+                height: 8px;
+                content: "";
+                background: #fff;
+                box-shadow:-1px 2px 2px 0px #ccc;
+                transform: rotate(45deg);
+            }
+
+            .tip_close {
+                display: none;
+            }
+
+            .tip_open {
+                display: block;
+            }
+
+        </style>
+        <div tip class="tip_sign">
+            <div class="tip_info tip_close">
+                <slot name="my-tip"></slot>
+            </div>
+        </div>
+    </template>

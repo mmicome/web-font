@@ -1,0 +1,30 @@
+<template id="">
+    <style>
+        span {
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            width: 20px;
+            height: 10px;
+            border-radius: 10px;
+            background: #74d8f1;
+        }
+
+        .open::before,
+        .close::before {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background: #fff;
+            content: "";
+        }
+
+        .close::before {
+            left: 0;
+        }
+    </style>
+
+    <span class="open"></span>
+</template>

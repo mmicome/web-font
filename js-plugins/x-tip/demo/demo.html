@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/github.css">
+    <script src="highlight.pack.js" charset="utf-8"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- 加载webcomponents包，其中包含所有必需的polyfills  -->
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../dist/tip.js"></script>
+    <!-- <script src="../src/tip.js"></script> -->
+    <style>
+        article {
+            /* color: #5ccbe7; */
+            margin: 0;
+        }
+        img {
+            width: 100px;
+        }
+        figure {
+            margin: 8px 14px;
+        }
+       article header {
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            color: #0d639c;
+            font-size: 18px;
+       }
+       article div pre{
+           border: 1px solid #070707;
+           background: #fff;
+       }
+       h3,h5 {
+            padding: 2px 8px;
+       }
+       .verb {
+           color:red;
+       }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div style="height:900px;"></div> -->
+        <table>
+                <tr>
+                    <td>simple: </td>
+                    <td>
+                        <input type="text">
+                        <x-tip content="test a info tip lang lang tip is wrap "></x-tip>
+                    </td>
+                </tr>
+                <tr>
+                    <td>custom: </td>
+                    <td>
+                        <input type="text">
+                        <x-tip>
+                            <figure slot="my-tip">
+                                <img src="https://img0.sc115.com/uploads/sc/jpgs/0117apic3188_sc115.com.jpg" alt="" />
+                                <figcaption>cute cat</figcaption>
+                            </figure>
+                        </x-tip>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- <td style="width:1350px"></td> -->
+                    <td>dynamic: simple</td>
+                    <td>
+                        <input type="text">
+                        <x-tip class="dynamicS"></x-tip>
+                    </td>
+                </tr>
+                <tr>
+                    <td>dynamic: custom</td>
+                    <td>
+                        <input type="text">
+                        <x-tip class="dynamicC"></x-tip>
+                    </td>
+                </tr>
+                <tr>
+                    <td>doc: </td>
+                    <td>
+                        <input type="text" placeholder="简单强大">
+                        <x-tip>
+                            <article slot="my-tip">
+                                <header>Info Tip</header>
+                                <section>
+                                    <article>
+                                        <h3>1. 引入文件</h3>
+                                        <div>
+                                            <pre><code class="html">
+        &lt;script src=&quot;ploymer.js&quot;&gt;&lt;/script&gt;  //如果兼容IE则需引入，且动态加载，不会消耗资源
+        &lt;script src=&quot;tip.js&quot;&gt;&lt;/script&gt;           //tip 组件
+                                            </code></pre>
+                                        </div>
+                                        <h3>2.1 simple tip: 使用 <code class="verb">content</code> 属性定义简单提示信息</h3>
+                                        <div>
+                                            <pre><code>
+         &lt;x-tip content=&quot;test a info tip lang lang tip is wrap &quot;&gt;&lt;/x-tip&gt; 
+                                                </code></pre>
+                                        </div>
+                                        </div>
+                                        <h3>2.2 custom tip: 使用模板自定义内容，完全自由 ; </h3>
+                                        <div>
+                                            <pre><code class="html">
+         &lt;x-tip&gt;
+            &lt;article slot=&quot;my-tip&quot;&gt;
+                &lt;header&gt;test a info tip&lt;/header&gt;
+                &lt;img src=&quot;http://img.hb.aicdn.com/56e32a3058f50f5fb364a86bf4a7b4af7e17c1be353a7-5VUnTc_fw658&quot; alt=&quot;&quot; /&gt;
+            &lt;/article&gt;
+        &lt;/x-tip&gt; 
+                                            </code></pre>
+                                        </div>
+                                        <i><b>注意</b>： 模板最外层元素包含属性<b><code class="verb">slot="my-tip"</code></b></i>
+                                    </article>
+                                </section>
+                            </article>
+                        </x-tip>
+                    </td>
+                </tr>
+            </table>
+    <script>
+        document.querySelector(".dynamicS").setAttribute('content', 'simple 方式');
+        var div = document.createElement('div');
+        div.setAttribute('slot', 'my-tip');
+        div.style.width = "100px";
+        div.textContent = "custom 方式";
+        document.querySelector(".dynamicC").appendChild(div);
+    </script>
+</body>
+
+</html>

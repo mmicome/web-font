@@ -1,0 +1,14 @@
+[
+  {
+    "title": "blog",
+    "app": [
+      {
+        "title": "DT-FE",
+        "action": "refer",
+        "url": "https://github.com/dt-fe/weekly/issues/12",
+        "content": "Ali Data Frontend Team",
+        "sign": true
+      }
+    ]
+  }
+]
