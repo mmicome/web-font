@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>upload file</title>
+	<style>
+		#wrap {
+			width: 350px;
+			min-height: 180px;
+			border: 1px solid #ccc;
+			box-shadow: 2px 3px 5px 0 #ccc;
+			margin:  100px auto;
+			padding: 20px;
+			background: linear-gradient(to bottom, #fff, #f3f3f3);
+		}
+		label {
+			color: #de686d;
+			font-family: sans-serifs;
+		}
+		div[id*=file] {
+			font-family: sans-serif;
+			margin-top: 5px;
+			margin: 5px 5px;
+		}
+		input[type="button"] {
+			width:  70px;
+			height: 30px;
+			border-radius: 8px;
+			margin-top: 5px;
+			border: 1px solid #ccc;
+			background: linear-gradient(to bottom, #fff, #ccc);
+		}
+		input[type="file"] {
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			background: linear-gradient(to bottom, #fff, #ccc);
+		}
+		#info {
+			padding: 8px;
+			padding-top: 12px;
+			min-height: 80px;
+			margin: 10px auto;
+			border-radius: 15px;
+			box-shadow: 2px 3px 6px 0 #ccc;
+			background: linear-gradient(to bottom, #f90, #c87901);
+		}
+		#progress {
+			width: 100%;
+			height: 13px;
+			border: none;
+			border-radius: 5px;
+			background-color: #ccc;
+		}
+		#progress #progressNumber {
+			border-radius: 5px;
+			width: 0;
+			height: 100%;
+			background: linear-gradient(to bottom, #65ca00, #4c9700);
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<form action="upload.php" id="myform" method="post" enctype="multipart/form-data">
+			<div class="row">
+				<label for="fileToUpload"> <b>Select a File to Upload</b></label><br>
+				<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();">
+			</div>
+			<div class="row">
+				<input type="button" onclick="uploadFile()" value="upload">
+			</div>
+			<div id="info">
+				<div id="fileName"></div>
+				<div id="fileSize"></div>
+				<div id="fileType"></div>
+			</div>
+			<div id="progress">
+				<div id="progressNumber">
+					<span id="message"></span>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script>
+		function fileSelected() {
+			var file = document.getElementById('fileToUpload').files[0];
+			document.getElementById('progressNumber').style.width = '0';
+			document.getElementById('message').innerHTML = '';
+			if(file) {
+				var fileSize = 0;
+				if(file.size > 1024*1024) {
+					fileSize = (Math.round(file.size * 100 / (1024*1024)) / 100).toString() + 'MB';
+				} else {
+					fileSize = (Math.round(file.size * 100 / 1024) / 100).toString() + 'KB';
+				}
+				document.getElementById('fileName').innerHTML = 'Name: ' + file.name;
+				document.getElementById('fileSize').innerHTML = 'Size: ' + fileSize;
+				document.getElementById('fileType').innerHTML = 'Type: ' + file.type;
+			}
+		}
+		function uploadFile() {
+			var formdata = new FormData();
+			formdata.append('fileToUpload', document.getElementById('fileToUpload').files[0]);
+			var xmlHttpRequest =  new XMLHttpRequest();
+			xmlHttpRequest.upload.addEventListener('progress',uploadProgress,false);
+			xmlHttpRequest.addEventListener('load',uploadComplete,false);
+			xmlHttpRequest.addEventListener('error',uploadFailed,false);
+			xmlHttpRequest.addEventListener('abort',uploadCanceled,false);
+			xmlHttpRequest.open('POST','server.php');
+			xmlHttpRequest.send(formdata);
+		}
+		function uploadProgress(evt) {
+			if(evt.lengthComputable) {
+				var precentComplete = Math.round(evt.loaded*100/evt.total);
+				document.getElementById('message').innerHTML = precentComplete.toString() + '%';
+				document.getElementById('progressNumber').style.width = precentComplete + '%';
+			} else {
+				document.getElementById('message').innerHTML = 'unable to compute';
+			}
+		}
+		function uploadComplete(evt) {
+		  /* 服务器端返回响应时候触发event事件*/
+		  //alert(evt.target.responseText);
+		}
+		function uploadFailed(evt) {
+		  alert("There was an error attempting to upload the file.");
+		}
+		function uploadCanceled(evt) {
+		  alert("The upload has been canceled by the user or the browser dropped the connection.");
+		}
+	</script>
+</body>
+</html>
