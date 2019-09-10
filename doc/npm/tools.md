@@ -7,3 +7,7 @@ nvm
 nrm
 
 npx
+
+gnpm
+
+npm-check-updates/npm-check
