@@ -101,3 +101,9 @@ require("@babel/register")({
 > 感谢各位大佬的文章，小弟无才，没有经历过什么风浪， `《史记》`谈不上，就打算提笔写本`《百家杂谈》`, 稍加修饰， 取百家之长， 仅此而已
 
 - [babel到底该如何配置？](https://juejin.im/post/59ec657ef265da431b6c5b03)
+
+## 配置browsers
+
+`"browsers": ["last 2 versions", "safari >= 7"]`
+
+[参考](https://github.com/browserslist/browserslist)
