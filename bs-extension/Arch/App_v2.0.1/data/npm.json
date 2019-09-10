@@ -1,0 +1,16 @@
+{
+  "title": "useful npm package",
+  "server": [
+   {
+     "name": "static-server",
+     "content": "localhost static file server,run cmd at '/'",
+     "cmd": ["$ npm install -g static-server", "$ static-server"],
+     "url": "https://www.npmjs.com/package/static-server",
+   },
+   {
+     "name": "json-server",
+     "content": "Get a full fake REST API with zero coding in less than 30 seconds (seriously)",
+     "url": "https://github.com/typicode/json-server",
+   }
+  ]
+}

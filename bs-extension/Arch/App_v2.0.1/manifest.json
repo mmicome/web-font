@@ -1,0 +1,52 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "name": "Arch",
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "author": "苏乞儿",
+    "description": "one lib contains everything",
+    "icons":
+    {
+        "16": "assets/icons/icon_16.png",
+        "48": "assets/icons/icon_48.png",
+        "128": "assets/icons/icon_128.png"
+    },
+    "permissions": [
+        "tabs",
+        "downloads",
+	    "storage",
+        "notifications",
+        "contextMenus",
+        "activeTab",
+        "https://*/*",
+        "http://*/*"
+    ],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["assets/js/tools.js"],
+        "run_at": "document_start"
+    }],
+    "background": {
+        "persistent": true,
+        "scripts": ["background.js"]
+    },
+    "chrome_url_overrides":
+    {
+        "newtab": "newtab.html"
+    },
+    "options_ui":
+    {
+        "page": "options.html",
+        "chrome_style": true
+    },
+    "omnibox": { "keyword" : "go" },
+    "devtools_page": "devtools.html",
+    "web_accessible_resources" : ["assets/js/hook.js"],
+    "homepage_url": "https://mmicome.github.io/",
+    "browser_action": 
+    {
+        "default_icon": "assets/icons/icon.png",
+        "default_title": "Arch",
+        "default_popup": "popup.html"
+    }
+}

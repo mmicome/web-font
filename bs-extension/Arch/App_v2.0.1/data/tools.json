@@ -1,0 +1,28 @@
+[
+  {
+    "title": "工具",
+    "app": [
+      {
+        "title": "favicon",
+        "action": "refer",
+        "url": "http://lab.ejci.net/favico.js/example-simple/",
+        "content": "自定义 favicon 徽章（ep: 虎牙直播favicon）",
+        "sign": true
+      },
+      {
+        "title": "tabs导出",
+        "action": "exportBK",
+        "url": "",
+        "content": "tabs 页签导出",
+        "sign": false
+      },
+      {
+        "title": "qrcodejs",
+        "action": "exportBK",
+        "url": "https://github.com/davidshimjs/qrcodejs",
+        "content": "二维码生成工具",
+        "sign": false
+      }
+    ]
+  }
+]

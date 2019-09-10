@@ -1,0 +1,11 @@
+{
+  "title": "c",
+  "server": [
+   {
+     "name": "static-server",
+     "content": "localhost static file server,run cmd at '/'",
+     "cmd": ["$ npm install -g static-server", "$ static-server"],
+     "url": "https://www.npmjs.com/package/static-server",
+   }
+  ]
+}

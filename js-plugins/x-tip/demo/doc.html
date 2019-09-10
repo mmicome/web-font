@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/github.css">
+    <script src="highlight.pack.js" charset="utf-8"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+        article {
+            /* color: #5ccbe7; */
+            margin: 0;
+        }
+        img {
+            width: 100px;
+        }
+        figure {
+            margin: 8px 14px;
+        }
+       article header {
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            color: #0d639c;
+            font-size: 18px;
+       }
+       article div pre{
+           border: 1px solid #070707;
+           background: #fff;
+       }
+       h3,h5 {
+            padding: 2px 8px;
+       }
+
+       .verb {
+           color:red;
+       }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <article slot="my-tip">
+            <header>Info Tip Doc</header>
+            <section>
+                <article>
+                    <h3 style="color:#000;font-size: 25px;">1. 引入文件</h3>
+                    <div>
+                        <pre><code class="html">
+&lt;script src=&quot;ploymer.js&quot;&gt;&lt;/script&gt;  //如果兼容IE则需引入，且动态加载，不会消耗资源
+&lt;script src=&quot;tip.js&quot;&gt;&lt;/script&gt;           //tip 组件
+                        </code></pre>
+                    </div>
+                    <h3 style="color:#000;font-size: 25px;">2. 使用 tip</h3>
+                    <h3 style="color:cadetblue">2.1 simple tip: 使用 <code class="verb">content</code> 属性定义简单提示信息</h3>
+                    <div>
+                        <pre><code>
+&lt;x-tip content=&quot;test a info tip lang lang tip is wrap &quot;&gt;&lt;/x-tip&gt; 
+                            </code></pre>
+                    </div>
+                    </div>
+                    <h3 style="color:cadetblue">2.2 custom tip: 使用模板自定义内容，完全自由 ; </h3>
+                    <div>
+                        <pre><code class="html">
+&lt;x-tip&gt;
+    &lt;article slot=&quot;my-tip&quot;&gt;
+        &lt;header&gt;test a info tip&lt;/header&gt;
+        &lt;img src=&quot;http://img.hb.aicdn.com/56e32a3058f50f5fb364a86bf4a7b4af7e17c1be353a7-5VUnTc_fw658&quot; alt=&quot;&quot; /&gt;
+    &lt;/article&gt;
+&lt;/x-tip&gt; 
+                        </code></pre>
+                    </div>
+                    <i><b>attention</b>： 模板最外层元素包含属性<b><code class="verb">slot="my-tip"</code></b></i>
+                    <h3 style="color:#aaaaaa">2.3 url tip: 通过url 引入外部独立文档(感觉不需要) </h3>
+                    <h3 style="color:cadetblue">2.4 ajax tip：动态创建提示信息，比如 ajax data </h3>
+                    <h5>simple</h5>
+                    <div>
+                        <pre><code class="js">
+document.querySelector("x-tip").setAttribute('content', 'simple 方式');
+                        </code></pre>
+                    </div>
+                    <h5>custom</h5>
+                    <div>
+                        <pre><code class="js">
+$.get(url, function(data) {
+    var div = document.createElement('div');
+    div.setAttribute('slot', 'my-tip');
+    div.style.width = "100px";
+    div.textContent = data;
+    document.querySelector("x-tip").appendChild(div);
+})
+                        </code></pre>
+                    </div>
+                </article>
+            </section>
+        </article>
+</body>
+
+</html>
