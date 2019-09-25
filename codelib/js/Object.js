@@ -26,19 +26,19 @@ var b = new Set([1,3,2]);
 console.log(eqSet(a, b)); // true
 
 //ES5 常规方案
-function compareObj(obj1, obj2) {
-  if(Object.keys(obj1).length != Object.keys(obj2).length) {
-    return false;
-  } else {
-    for(key in obj1) {
-      if(obj2.hasOwnProperty(key)) {
-        if(!Object.is(obj1[key], obj2[key])) {
-          return false;
-        } else {
+function compare(obj1,obj2){
+    if(Object.keys(obj1).length != Object.keys(obj2).length){
+      return false
+    }else{
+      for(key in obj1){
+        if(obj2.hasOwnProperty(key)){
+            if( !Object.is(obj1[key],obj2[key])){
+                return false;
+            }
+        }else{
           return false
         }
       }
+      return true
     }
-    return true;
-  }
 }
