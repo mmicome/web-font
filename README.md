@@ -16,3 +16,6 @@ https://juejin.im/post/5ac9c6f451882555677ed301
 导入导出， 接口返回， 最好做字段映射， 即使字段一致
 
 前端字段常量一定统一维护， 不直接写属性字段， 即 obj.prop 方式 而使用 obj[CONST.FIELD.PROP] 易于维护
+
+
+vscode ctrl k + ctrl s 打开快捷键doc
