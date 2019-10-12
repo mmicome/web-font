@@ -1,8 +1,10 @@
 # el-element icon 拓展方案
 
+> element icon 组件本身字体数量不足， 样式较少，缺少自定义字体
+
 - 引入 [fontAwesomeIcon](https://github.com/FortAwesome/vue-fontawesome)icon
 - 引入[阿里icon](https://www.iconfont.cn/home/index)
-- 本地图片自定义icon
+- 本地图片自定义 icon
 
 ## 一、引入[阿里icon](https://www.iconfont.cn/home/index) 其他图标库类似
 
