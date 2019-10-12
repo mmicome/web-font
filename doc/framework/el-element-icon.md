@@ -9,7 +9,7 @@
 - 选择需要的icon 添加到购物车
 - 到购物车添加到项目（没有就创建）图标前缀最好命名为 `el-ext`
 - 点击下载icon （Download Code)
-- 解压（文件内的文件）放到项目`/assets/font`下
+- 解压（文件内的文件）放到项目`/assets/font`下(按实际情况)
 - 引入 `/assets/font/iconfont.css`
 - 修改iconfont 添加以下内容：
 
