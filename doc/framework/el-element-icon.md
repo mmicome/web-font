@@ -4,7 +4,7 @@
 - 引入[阿里icon](https://www.iconfont.cn/home/index)
 - 本地图片自定义icon
 
-## 引入[阿里icon](https://www.iconfont.cn/home/index) 其他图标库类似
+## 一、引入[阿里icon](https://www.iconfont.cn/home/index) 其他图标库类似
 
 - 选择需要的icon 添加到购物车
 - 到购物车添加到项目（没有就创建）图标前缀最好命名为 `el-ext`
@@ -19,7 +19,7 @@
 }
 ```
 
-## 引入 [fontAwesomeIcon](https://github.com/FortAwesome/vue-fontawesome)
+## 二、引入 [fontAwesomeIcon](https://github.com/FortAwesome/vue-fontawesome)
 
 1. 安装基础依赖（已安装忽略）
 
@@ -59,7 +59,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 **附：** [其他方式，按需引入](https://github.com/FortAwesome/vue-fontawesome)
 
-## 本地图片自定义icon
+## 三、本地图片自定义icon
 
 原理： `el-element` 是将`icon`标识内容放在 class 内， 故而可以自定义 `el-ext*` 样式于字体文件， 然后引入该文件
 ```css
